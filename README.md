@@ -2,6 +2,14 @@
 
 This project is a conference bingo game with a Flutter frontend and a Laravel backend.
 
+Frontend
+<img width="499" height="565" alt="image" src="https://github.com/user-attachments/assets/c57c0d7c-2897-4ade-8947-af86e8187c0c" />
+
+Backend
+<img width="1468" height="435" alt="image" src="https://github.com/user-attachments/assets/c5e6e9c2-5d73-4aa8-9641-d330b2fba949" />
+
+
+
 ## Prerequisites
 
 Make sure you have the following installed on your system:
