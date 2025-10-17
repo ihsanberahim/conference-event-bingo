@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        - API_BASE_URL=${API_BASE_URL}
+    ports:
+      - "8080:80"
+    env_file:
+      - ./.env
+
+  backend-app:
+    build:
+      context: ./backend
+    env_file:
+      - ./.env
+    volumes:
+      - ./backend:/var/www/html
+      - backend_storage:/var/www/html/storage
+      - backend_database:/var/w
+
+  backend-nginx:
+    image: nginx:alpine
+    ports:
+      - "8000:80"
+    volumes:
+      - ./backend:/var/www/html
+      - ./backend/docker/nginx/default.conf:/etc/nginx/conf.d/default.conf
+    depends_on:
+      - backend-app
+
+volumes:
+  backend_storage:
+  backend_database:

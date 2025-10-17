@@ -1,0 +1,27 @@
+---
+alwaysApply: true
+---
+# Gemini Development Plan: Conference BINGO
+
+## Projects
+
+### Frontend
+to let user participate the bingo by email.
+Working Directory: `@/frontend`
+Dependencies: `@/pubspec.lock`
+Stacks:
+- Flutter
+
+### Backend
+to store the bingo data. to provide dashboard. to control the bingo size, missions and line to win.
+Working Directory: `@/backend`
+Stacks:
+- Code: laravel + filamentphp
+- Database: sqlite
+
+## Commands
+- use `flutter` binary at `/Users/muhammadnurihsanberahim/Library/Application\ Support/io.flutterflow.prod.mac/flutter/bin/flutter`
+    - to run flutter command
+
+## Rules
+- do not run `php artisan serve` automatically. let me do it manually.
